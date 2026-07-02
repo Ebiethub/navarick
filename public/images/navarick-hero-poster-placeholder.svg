@@ -1,0 +1,26 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">NAVARICK chrome-glass animation poster placeholder</title>
+  <desc id="desc">A dark obsidian poster with a restrained chrome and bronze material mark placeholder.</desc>
+  <rect width="1200" height="1200" fill="#070706"/>
+  <rect x="96" y="96" width="1008" height="1008" fill="#0D0D0C" stroke="rgb(242 240 235 / 0.12)"/>
+  <path d="M244 809L445 391H552L754 809H642L602 719H395L356 809H244ZM435 625H563L499 481L435 625Z" fill="url(#chrome)"/>
+  <path d="M680 391H789L956 809H846L815 724H653L622 809H512L680 391ZM687 631H781L734 501L687 631Z" fill="url(#bronze)"/>
+  <path d="M276 842H924" stroke="#E3E5E5" stroke-opacity="0.2"/>
+  <path d="M362 354H838" stroke="#A8733A" stroke-opacity="0.28"/>
+  <circle cx="795" cy="335" r="154" fill="#C08A4A" fill-opacity="0.08"/>
+  <circle cx="465" cy="715" r="206" fill="#BFC3C5" fill-opacity="0.05"/>
+  <defs>
+    <linearGradient id="chrome" x1="281" y1="386" x2="667" y2="813" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E3E5E5"/>
+      <stop offset="0.38" stop-color="#696762"/>
+      <stop offset="0.62" stop-color="#BFC3C5"/>
+      <stop offset="1" stop-color="#24221F"/>
+    </linearGradient>
+    <linearGradient id="bronze" x1="568" y1="407" x2="953" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E7D8BB"/>
+      <stop offset="0.4" stop-color="#A8733A"/>
+      <stop offset="0.72" stop-color="#C08A4A"/>
+      <stop offset="1" stop-color="#181816"/>
+    </linearGradient>
+  </defs>
+</svg>

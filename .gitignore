@@ -1,0 +1,40 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+/dist
+/coverage
+
+# local environment
+.env*
+!.env.example
+
+# logs and tooling
+*.log
+.DS_Store
+Thumbs.db
+*.tsbuildinfo
+next-env.d.ts
+/.chrome-audit-profile/
+/.phase20-chrome/
+/.asset-review/
+/*.png
+/*.jpg
+/*.jpeg
+/*.webp
+
+# deployment
+.vercel
+
+# secrets and private keys
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
