@@ -33,14 +33,16 @@ export function HeroBackgroundVideo() {
     let fallbackTimerId: ReturnType<typeof setTimeout> | undefined;
 
     const scheduleVideoLoad = () => {
-      if (!query.matches || prefersReducedMotion) {
+      if (prefersReducedMotion) {
         setShouldLoadVideo(false);
         return;
       }
 
       const loadVideo = () => setShouldLoadVideo(true);
 
-      if ("requestIdleCallback" in window) {
+      if (!query.matches) {
+        loadVideo();
+      } else if ("requestIdleCallback" in window) {
         idleCallbackId = window.requestIdleCallback(loadVideo, { timeout: 1800 });
       } else {
         fallbackTimerId = globalThis.setTimeout(loadVideo, 900);
@@ -68,6 +70,7 @@ export function HeroBackgroundVideo() {
 
   return (
     <div className="hero-video" aria-hidden="true">
+      <div className="hero-video__poster" />
       {shouldLoadVideo ? (
         <motion.video
           autoPlay
@@ -76,7 +79,7 @@ export function HeroBackgroundVideo() {
           muted
           playsInline
           poster={HERO_POSTER_SRC}
-          preload="none"
+          preload="metadata"
           src={HERO_VIDEO_SRC}
           style={{ y: mediaY }}
         />

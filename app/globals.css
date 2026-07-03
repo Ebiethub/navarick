@@ -995,6 +995,7 @@ a {
 }
 
 .hero-video,
+.hero-video__poster,
 .hero-video__media,
 .hero-video__depth,
 .hero-video__obsidian,
@@ -1011,7 +1012,16 @@ a {
   overflow: hidden;
 }
 
+.hero-video__poster {
+  z-index: 0;
+  background:
+    linear-gradient(90deg, rgb(7 7 6 / 58%) 0%, rgb(7 7 6 / 18%) 48%, rgb(7 7 6 / 58%) 100%),
+    url("/images/navarick-hero-poster-placeholder.svg") center / cover no-repeat,
+    var(--color-canvas);
+}
+
 .hero-video__media {
+  z-index: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -4994,18 +5004,32 @@ a {
     width: 100%;
   }
 
+  .portfolio-media-card {
+    padding: clamp(1rem, 4vw, 1.5rem);
+  }
+
+  .portfolio-media-card__link {
+    display: grid;
+    place-items: center;
+  }
+
+  .portfolio-media-card--logo .portfolio-media-card__image {
+    object-fit: contain;
+    padding: clamp(0.75rem, 3vw, 1.25rem);
+  }
+
   .portfolio-media-card--logo .portfolio-media-card__link {
-    max-height: none;
-    min-height: clamp(14rem, 72vw, 22rem);
+    max-height: 13.75rem;
+    min-height: clamp(10rem, 50vw, 13.75rem);
   }
 
   .portfolio-media-card--cover .portfolio-media-card__link {
-    min-height: clamp(14rem, 72vw, 22rem);
+    min-height: clamp(11rem, 56vw, 15rem);
   }
 
   .logo-showcase .portfolio-media-card--logo .portfolio-media-card__link {
-    min-height: clamp(14rem, 72vw, 22rem);
-    max-height: none;
+    max-height: 12.5rem;
+    min-height: clamp(10rem, 50vw, 12.5rem);
   }
 
   .gallery-work--wide,
@@ -5892,8 +5916,8 @@ a {
   }
 
   .portfolio-media-card--logo .portfolio-media-card__link {
-    min-height: 8rem;
-    max-height: 11rem;
+    min-height: 10rem;
+    max-height: 12.5rem;
   }
 
   .case-facts dd,
@@ -6568,13 +6592,15 @@ a {
 
   .portfolio-category__grid--gallery .portfolio-media-card--cover .portfolio-media-card__link,
   .portfolio-category__grid--gallery .portfolio-media-card--logo .portfolio-media-card__link {
-    min-height: clamp(15rem, 74vw, 24rem);
+    min-height: clamp(11rem, 56vw, 13.75rem);
+    max-height: 13.75rem;
   }
 
   .logo-showcase .portfolio-media-card--logo .portfolio-media-card__link,
   .portfolio-media-card--logo .portfolio-media-card__link,
   .portfolio-media-card--cover .portfolio-media-card__link {
-    min-height: clamp(14rem, 72vw, 22rem);
+    min-height: clamp(10rem, 50vw, 13.75rem);
+    max-height: 13.75rem;
   }
 
   .case-visual__stage {
