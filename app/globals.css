@@ -3851,6 +3851,182 @@ a {
   gap: clamp(1rem, 2vw, 1.5rem);
 }
 
+/* Site-wide responsive hardening */
+.home-section__inner,
+.work-shell,
+.case-shell,
+.services-shell,
+.about-shell,
+.contact-shell,
+.hero-editorial__inner,
+.site-footer__inner,
+.site-header__shell,
+.mobile-menu__nav,
+.home-section__intro,
+.studio-philosophy__grid,
+.proof__grid,
+.featured-project,
+.capability-row,
+.work-hero__grid,
+.work-featured__content,
+.work-project,
+.portfolio-category__header,
+.work-contact__grid,
+.case-overview__grid,
+.case-next__grid,
+.case-contact__grid,
+.services-hero__grid,
+.services-index__grid,
+.services-faq__grid,
+.services-cta__grid,
+.service-chapter,
+.about-hero__grid,
+.about-story__grid,
+.about-philosophy__grid,
+.about-values__grid,
+.about-approach__stage,
+.contact-hero__grid,
+.contact-inquiry__grid,
+.contact-methods__grid,
+.contact-reassurance__grid {
+  max-width: 100%;
+}
+
+.home-section__inner > *,
+.work-shell > *,
+.case-shell > *,
+.services-shell > *,
+.about-shell > *,
+.contact-shell > *,
+.hero-editorial__inner > *,
+.site-footer__inner > *,
+.site-header__shell > *,
+.mobile-menu__nav > *,
+.home-section__intro > *,
+.studio-philosophy__grid > *,
+.proof__grid > *,
+.featured-project > *,
+.capability-row > *,
+.work-hero__grid > *,
+.work-featured__content > *,
+.work-project > *,
+.portfolio-category__header > *,
+.work-contact__grid > *,
+.case-overview__grid > *,
+.case-next__grid > *,
+.case-contact__grid > *,
+.services-hero__grid > *,
+.services-index__grid > *,
+.services-faq__grid > *,
+.services-cta__grid > *,
+.service-chapter > *,
+.about-hero__grid > *,
+.about-story__grid > *,
+.about-philosophy__grid > *,
+.about-values__grid > *,
+.about-approach__stage > *,
+.contact-hero__grid > *,
+.contact-inquiry__grid > *,
+.contact-methods__grid > *,
+.contact-reassurance__grid > * {
+  min-width: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+dt,
+dd,
+address,
+a,
+button,
+label,
+input,
+textarea {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.hero-editorial__heading,
+.home-heading,
+.work-hero h1,
+.case-hero h1,
+.services-hero h1,
+.about-hero h1,
+.contact-hero h1,
+.work-featured__content h2,
+.work-list__intro h2,
+.work-contact h2,
+.case-chapter__header h2,
+.case-overview h2,
+.case-results h2,
+.case-next h2,
+.case-contact h2,
+.services-index__intro h2,
+.services-process__header h2,
+.services-faq h2,
+.services-cta h2,
+.about-philosophy h2,
+.about-values__intro h2,
+.about-capabilities h2,
+.about-approach__header h2,
+.about-cta h2,
+.contact-inquiry h2,
+.contact-methods h2,
+.contact-next__header h2,
+.contact-reassurance h2 {
+  text-wrap: balance;
+}
+
+.home-lede,
+.hero-editorial__description,
+.work-hero__statement p,
+.case-copy p,
+.service-chapter__body p,
+.service-chapter__body li,
+.services-faq__item p,
+.about-hero__copy p,
+.about-story__copy p,
+.about-philosophy__copy p,
+.contact-hero__copy p,
+.contact-inquiry__intro p,
+.contact-reassurance__copy p {
+  text-wrap: pretty;
+}
+
+.hero-actions,
+.final-cta__actions,
+.contact-form__actions,
+.work-filter__controls,
+.selected-works__filters {
+  max-width: 100%;
+}
+
+.hero-actions__primary,
+.hero-actions__secondary,
+.final-cta__primary,
+.home-arrow-link,
+.work-contact__button,
+.case-button,
+.services-button,
+.about-button,
+.contact-button,
+.work-filter__button,
+.contact-choice span {
+  min-width: 0;
+  white-space: normal;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
 .contact-inquiry {
   background: var(--color-canvas);
 }
@@ -6493,6 +6669,57 @@ a {
     --type-card-title: clamp(1.25rem, 6vw, 1.5rem);
   }
 
+  .home-section__inner,
+  .work-shell,
+  .case-shell,
+  .services-shell,
+  .about-shell,
+  .contact-shell {
+    width: min(calc(100% - (var(--container-gutter) * 2)), var(--container-max));
+  }
+
+  .hero-actions,
+  .final-cta__actions,
+  .contact-form__actions {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+  }
+
+  .hero-actions__primary,
+  .hero-actions__secondary,
+  .final-cta__primary,
+  .home-arrow-link,
+  .work-contact__button,
+  .case-button,
+  .services-button,
+  .about-button,
+  .contact-button {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .portfolio-category__header,
+  .contact-next__header,
+  .services-process__header,
+  .about-approach__header {
+    display: grid;
+    align-items: start;
+    gap: 0.75rem;
+  }
+
+  .service-chapter,
+  .contact-method,
+  .contact-next__item,
+  .about-value,
+  .about-approach__stage,
+  .services-process__stage,
+  .services-faq__item {
+    overflow: hidden;
+  }
+
   .hero-editorial__inner {
     gap: clamp(1rem, 3vh, 1.75rem);
     padding: 5.25rem 1.25rem 1.25rem;
@@ -6576,5 +6803,33 @@ a {
   .contact-page .contact-reassurance h2 {
     font-size: clamp(1.875rem, 8.8vw, 2.25rem);
     line-height: 1.08;
+  }
+}
+
+@media (max-width: 23.5rem) {
+  :root {
+    --container-gutter: 1rem;
+    --type-display: clamp(2.25rem, 12vw, 2.8rem);
+    --type-page-h1: clamp(2.125rem, 10.5vw, 2.55rem);
+    --type-section-h2: clamp(1.65rem, 8.2vw, 2rem);
+  }
+
+  .home-label,
+  .work-label,
+  .case-label,
+  .contact-label,
+  .services-label,
+  .about-label,
+  .work-filter__title,
+  .case-facts dt,
+  .case-overview__content dt,
+  .work-meta,
+  .selected-works__filters span {
+    letter-spacing: 0.08em;
+  }
+
+  .work-filter__controls,
+  .selected-works__filters {
+    grid-template-columns: 1fr;
   }
 }
