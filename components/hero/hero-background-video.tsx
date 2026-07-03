@@ -12,9 +12,9 @@ const HERO_POSTER_SRC = "/images/navarick-hero-poster-placeholder.svg";
 export function HeroBackgroundVideo() {
   const prefersReducedMotion = useReducedMotion();
   const [canUseParallax, setCanUseParallax] = useState(false);
-  const [shouldLoadVideo, setShouldLoadVideo] = useState(false);
   const { scrollYProgress } = useScroll();
   const shouldUseParallax = canUseParallax && !prefersReducedMotion;
+  const shouldShowVideo = !prefersReducedMotion;
   const mediaY = useTransform(
     scrollYProgress,
     [0, 0.28],
@@ -29,29 +29,9 @@ export function HeroBackgroundVideo() {
 
   useEffect(() => {
     const query = window.matchMedia("(hover: hover) and (pointer: fine) and (min-width: 768px)");
-    let idleCallbackId: number | undefined;
-    let fallbackTimerId: ReturnType<typeof setTimeout> | undefined;
-
-    const scheduleVideoLoad = () => {
-      if (prefersReducedMotion) {
-        setShouldLoadVideo(false);
-        return;
-      }
-
-      const loadVideo = () => setShouldLoadVideo(true);
-
-      if (!query.matches) {
-        loadVideo();
-      } else if ("requestIdleCallback" in window) {
-        idleCallbackId = window.requestIdleCallback(loadVideo, { timeout: 1800 });
-      } else {
-        fallbackTimerId = globalThis.setTimeout(loadVideo, 900);
-      }
-    };
 
     const updateParallaxPreference = () => {
       setCanUseParallax(query.matches);
-      scheduleVideoLoad();
     };
 
     updateParallaxPreference();
@@ -59,19 +39,13 @@ export function HeroBackgroundVideo() {
 
     return () => {
       query.removeEventListener("change", updateParallaxPreference);
-      if (idleCallbackId !== undefined && "cancelIdleCallback" in window) {
-        window.cancelIdleCallback(idleCallbackId);
-      }
-      if (fallbackTimerId !== undefined) {
-        window.clearTimeout(fallbackTimerId);
-      }
     };
-  }, [prefersReducedMotion]);
+  }, []);
 
   return (
     <div className="hero-video" aria-hidden="true">
       <div className="hero-video__poster" />
-      {shouldLoadVideo ? (
+      {shouldShowVideo ? (
         <motion.video
           autoPlay
           className="hero-video__media"
