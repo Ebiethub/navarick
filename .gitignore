@@ -16,6 +16,11 @@
 
 # logs and tooling
 *.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 .DS_Store
 Thumbs.db
 *.tsbuildinfo
@@ -23,10 +28,20 @@ next-env.d.ts
 /.chrome-audit-profile/
 /.phase20-chrome/
 /.asset-review/
+/screenshots/
+/screenshot*/
+/chrome-audit*/
+/audit*/
+/playwright-report/
+/test-results/
+/tmp/
+/temp/
 /*.png
 /*.jpg
 /*.jpeg
 /*.webp
+*.tmp
+*.temp
 
 # deployment
 .vercel

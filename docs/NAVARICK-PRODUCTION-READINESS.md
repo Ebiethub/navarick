@@ -1,4 +1,4 @@
-# NAVARICK Production Readiness
+﻿# NAVARICK Production Readiness
 
 Last reviewed: 2026-07-01
 
@@ -31,11 +31,11 @@ Last reviewed: 2026-07-01
 
 Created optimized image derivatives:
 
-- `public/images/Brand Identity/Melvbee Vellora Presentation-01.optimized.webp`: 9.63 MB original to 114 KB.
-- `public/images/Brand Identity/Motrion Fitness Presentation-01.optimized.webp`: 12.18 MB original to 113.5 KB.
-- `public/images/Brand Identity/Mountess-01.optimized.webp`: 2.41 MB original to 104.4 KB.
-- `public/images/Brand Identity/Gravitas gym Logo-presentation.optimized.webp`: 253.2 KB original to 100.8 KB.
-- `public/images/Brand Identity/Siaga Beauty Presentation-01.optimized.webp`: 831.1 KB original to 60.3 KB.
+- `public/images/brand-identity/brand-identity-10.webp`: 9.63 MB original to 114 KB.
+- `public/images/brand-identity/brand-identity-12.webp`: 12.18 MB original to 113.5 KB.
+- `public/images/brand-identity/brand-identity-14.webp`: 2.41 MB original to 104.4 KB.
+- `public/images/brand-identity/brand-identity-07.webp`: 253.2 KB original to 100.8 KB.
+- `public/images/brand-identity/brand-identity-16.webp`: 831.1 KB original to 60.3 KB.
 
 The original files remain in the repository for source fidelity, but runtime gallery logic prefers optimized siblings when available.
 

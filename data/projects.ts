@@ -1,4 +1,4 @@
-import type { Project } from "@/types";
+﻿import type { Project } from "@/types";
 
 const placeholderCopy = {
   overview:
@@ -34,7 +34,7 @@ export const projects: readonly Project[] = [
     status: "published",
     featured: true,
     cover: {
-      src: "/images/Brand Identity/Melvbee Vellora Presentation-01.optimized.webp",
+      src: "/images/brand-identity/brand-identity-10.webp",
       alt: "Melvbee Vellora brand identity board with logo, apparel, signage, color palette, and mobile mockups.",
       width: 1800,
       height: 1200,
@@ -42,7 +42,7 @@ export const projects: readonly Project[] = [
     ...placeholderCopy,
     gallery: [
       {
-        src: "/images/Brand Identity/Melvbee Vellora Presentation-01.optimized.webp",
+        src: "/images/brand-identity/brand-identity-10.webp",
         alt: "Full Melvbee Vellora identity presentation board.",
         width: 1800,
         height: 1200,
@@ -63,7 +63,7 @@ export const projects: readonly Project[] = [
     status: "published",
     featured: true,
     cover: {
-      src: "/images/Brand Identity/Motrion Fitness Presentation-01.optimized.webp",
+      src: "/images/brand-identity/brand-identity-12.webp",
       alt: "Motrion Fitness Club identity board with gym signage, apparel, bottle, app icon, and logo applications.",
       width: 1800,
       height: 1200,
@@ -71,13 +71,13 @@ export const projects: readonly Project[] = [
     ...placeholderCopy,
     gallery: [
       {
-        src: "/images/Brand Identity/Motrion Fitness Presentation-01.optimized.webp",
+        src: "/images/brand-identity/brand-identity-12.webp",
         alt: "Full Motrion Fitness Club brand identity presentation board.",
         width: 1800,
         height: 1200,
       },
       {
-        src: "/images/Brand Identity/Gravitas gym Logo-presentation.jpg",
+        src: "/images/brand-identity/brand-identity-06.jpg",
         alt: "Fitness brand logo presentation with gym-oriented mockups.",
         width: 1500,
         height: 1000,
@@ -98,7 +98,7 @@ export const projects: readonly Project[] = [
     status: "published",
     featured: true,
     cover: {
-      src: "/images/Brand Identity/Mountess-01.optimized.webp",
+      src: "/images/brand-identity/brand-identity-14.webp",
       alt: "Mountess fitness identity board with logo, color palette, typography, gym wall graphics, and campaign mockups.",
       width: 1800,
       height: 1200,
@@ -106,7 +106,7 @@ export const projects: readonly Project[] = [
     ...placeholderCopy,
     gallery: [
       {
-        src: "/images/Brand Identity/Mountess-01.optimized.webp",
+        src: "/images/brand-identity/brand-identity-14.webp",
         alt: "Full Mountess fitness identity presentation board.",
         width: 1800,
         height: 1200,
@@ -127,7 +127,7 @@ export const projects: readonly Project[] = [
     status: "published",
     featured: true,
     cover: {
-      src: "/images/uiux design/Modern Peptide Ecommerce Store Clean UI Design.jpg",
+      src: "/images/uiux-design/uiux-06.jpg",
       alt: "Dark ecommerce website UI for a peptide product store with hero product visuals and supporting page sections.",
       width: 735,
       height: 551,
@@ -135,13 +135,13 @@ export const projects: readonly Project[] = [
     ...placeholderCopy,
     gallery: [
       {
-        src: "/images/uiux design/Modern Peptide Ecommerce Store Clean UI Design.jpg",
+        src: "/images/uiux-design/uiux-06.jpg",
         alt: "Peptide ecommerce website UI presentation.",
         width: 735,
         height: 551,
       },
       {
-        src: "/images/uiux design/WordPress Website Design Ecommerce – Fashion UI Inspiration.jpg",
+        src: "/images/uiux-design/uiux-07.jpg",
         alt: "Fashion ecommerce UI reference with product-led page sections.",
         width: 736,
         height: 1104,
@@ -162,7 +162,7 @@ export const projects: readonly Project[] = [
     status: "published",
     featured: false,
     cover: {
-      src: "/images/website design/Smart Home UI design - Brigitta Endrédi.jpg",
+      src: "/images/website-design/website-05.jpg",
       alt: "Dark product website design with a superbike hero, navigation, and minimal editorial layout.",
       width: 735,
       height: 575,
@@ -170,13 +170,13 @@ export const projects: readonly Project[] = [
     ...placeholderCopy,
     gallery: [
       {
-        src: "/images/website design/Smart Home UI design - Brigitta Endrédi.jpg",
+        src: "/images/website-design/website-05.jpg",
         alt: "Premium product website design reference.",
         width: 735,
         height: 575,
       },
       {
-        src: "/images/website design/WebDesign clothing.jpg",
+        src: "/images/website-design/website-07.jpg",
         alt: "Fashion website design reference with clean ecommerce composition.",
         width: 736,
         height: 552,
@@ -197,7 +197,7 @@ export const projects: readonly Project[] = [
     status: "published",
     featured: false,
     cover: {
-      src: "/images/logo design1/Elegant & Modern Fashion Wordmark Logo Design for Ready-to-Wear Brands.webp",
+      src: "/images/logo-design/logo-21.webp",
       alt: "Elegant fashion wordmark logo design presentation for a ready-to-wear brand.",
       width: 736,
       height: 736,
@@ -205,13 +205,13 @@ export const projects: readonly Project[] = [
     ...placeholderCopy,
     gallery: [
       {
-        src: "/images/logo design1/Elegant & Modern Fashion Wordmark Logo Design for Ready-to-Wear Brands.webp",
+        src: "/images/logo-design/logo-21.webp",
         alt: "Fashion wordmark logo design presentation.",
         width: 736,
         height: 736,
       },
       {
-        src: "/images/logo design1/Luxury elegant gold logo mockup on brown paper for beauty industry branding.jpg",
+        src: "/images/logo-design/logo-32.jpg",
         alt: "Luxury gold logo mockup for beauty industry branding.",
         width: 736,
         height: 920,
@@ -232,7 +232,7 @@ export const projects: readonly Project[] = [
     status: "published",
     featured: false,
     cover: {
-      src: "/images/logo design1/Alura Interiors 2.webp",
+      src: "/images/logo-design/logo-02.webp",
       alt: "Alura Interiors monochrome wordmark logo presentation.",
       width: 1280,
       height: 738,
@@ -240,7 +240,7 @@ export const projects: readonly Project[] = [
     ...placeholderCopy,
     gallery: [
       {
-        src: "/images/logo design1/Alura Interiors 2.webp",
+        src: "/images/logo-design/logo-02.webp",
         alt: "Alura Interiors logo design presentation.",
         width: 1280,
         height: 738,
@@ -261,7 +261,7 @@ export const projects: readonly Project[] = [
     status: "published",
     featured: false,
     cover: {
-      src: "/images/logo design1/Luxury Logo Design for Premium Brands.webp",
+      src: "/images/logo-design/logo-33.webp",
       alt: "Astoria luxury logo design with gold typography on a deep green background.",
       width: 736,
       height: 1318,
@@ -269,7 +269,7 @@ export const projects: readonly Project[] = [
     ...placeholderCopy,
     gallery: [
       {
-        src: "/images/logo design1/Luxury Logo Design for Premium Brands.webp",
+        src: "/images/logo-design/logo-33.webp",
         alt: "Astoria luxury logo design presentation.",
         width: 736,
         height: 1318,
@@ -290,7 +290,7 @@ export const projects: readonly Project[] = [
     status: "published",
     featured: false,
     cover: {
-      src: "/images/logo design1/Logo design for a subscription box - Blanc Lueur Studio.webp",
+      src: "/images/logo-design/logo-27.webp",
       alt: "Mana self-care logo mark and wordmark in champagne on a deep green background.",
       width: 736,
       height: 1318,
@@ -298,7 +298,7 @@ export const projects: readonly Project[] = [
     ...placeholderCopy,
     gallery: [
       {
-        src: "/images/logo design1/Logo design for a subscription box - Blanc Lueur Studio.webp",
+        src: "/images/logo-design/logo-27.webp",
         alt: "Mana logo design presentation.",
         width: 736,
         height: 1318,
@@ -319,7 +319,7 @@ export const projects: readonly Project[] = [
     status: "published",
     featured: false,
     cover: {
-      src: "/images/Brand strategy/Organic Skincare Brand Design Inspiration _ Complete Branding & Packaging Design.jpg",
+      src: "/images/brand-strategy/brand-strategy-14.jpg",
       alt: "Organic skincare brand design presentation with packaging and identity references.",
       width: 735,
       height: 950,
@@ -327,13 +327,13 @@ export const projects: readonly Project[] = [
     ...placeholderCopy,
     gallery: [
       {
-        src: "/images/Brand strategy/Organic Skincare Brand Design Inspiration _ Complete Branding & Packaging Design.jpg",
+        src: "/images/brand-strategy/brand-strategy-14.jpg",
         alt: "Organic skincare packaging and brand design reference.",
         width: 735,
         height: 950,
       },
       {
-        src: "/images/Brand strategy/Restaurant & Food Brand Identity Design with Logo, Mockups & Color Palette.jpg",
+        src: "/images/brand-strategy/brand-strategy-16.jpg",
         alt: "Brand identity board with logo, mockups, and color palette.",
         width: 736,
         height: 1104,
@@ -354,7 +354,7 @@ export const projects: readonly Project[] = [
     status: "published",
     featured: false,
     cover: {
-      src: "/images/mobile app/Dark Mode UI_UX,  Luxury Electric Vehicle Landing by Luxury Creations_.jpg",
+      src: "/images/mobile-app/mobile-app-02.jpg",
       alt: "Dark mode mobile UI and landing page presentation for a luxury electric vehicle concept.",
       width: 736,
       height: 1282,
@@ -362,13 +362,13 @@ export const projects: readonly Project[] = [
     ...placeholderCopy,
     gallery: [
       {
-        src: "/images/mobile app/Dark Mode UI_UX,  Luxury Electric Vehicle Landing by Luxury Creations_.jpg",
+        src: "/images/mobile-app/mobile-app-02.jpg",
         alt: "Dark mobile UI presentation for a luxury electric vehicle concept.",
         width: 736,
         height: 1282,
       },
       {
-        src: "/images/mobile app/#UIUXDesign #WebDesign #WebsiteDesign #UXDesign #UIDesign #UserExperience #UserInterface #WebDesigner #WebDevelopment #ResponsiveDesign #LandingPage #WebsiteInspiration #DesignInspiration #CreativeDesign #ModernDesign.jpg",
+        src: "/images/mobile-app/mobile-app-01.jpg",
         alt: "Mobile and web interface design presentation with multiple screen states.",
         width: 736,
         height: 1308,
@@ -389,7 +389,7 @@ export const projects: readonly Project[] = [
     status: "published",
     featured: false,
     cover: {
-      src: "/images/product design/CÜRAA Electric Pepper Grinder _ Rechargeable Automatic Pepper Mill _ Adjustable Coarseness Seasoning.jpg",
+      src: "/images/product-design/product-03.jpg",
       alt: "Electric pepper grinder product presentation with rechargeable feature and seasoning use case.",
       width: 736,
       height: 1104,
@@ -397,13 +397,13 @@ export const projects: readonly Project[] = [
     ...placeholderCopy,
     gallery: [
       {
-        src: "/images/product design/CÜRAA Electric Pepper Grinder _ Rechargeable Automatic Pepper Mill _ Adjustable Coarseness Seasoning.jpg",
+        src: "/images/product-design/product-03.jpg",
         alt: "Electric pepper grinder product design presentation.",
         width: 736,
         height: 1104,
       },
       {
-        src: "/images/product design/Беспроводной контроллер DualSence Playstation 5.jpg",
+        src: "/images/product-design/product-04.jpg",
         alt: "Wireless controller product presentation reference.",
         width: 736,
         height: 981,
@@ -424,7 +424,7 @@ export const projects: readonly Project[] = [
     status: "published",
     featured: false,
     cover: {
-      src: "/images/web development/Dental Services Website Template.webp",
+      src: "/images/web-development/webdev-02.webp",
       alt: "Dental services website template with service sections and professional web layout.",
       width: 736,
       height: 1104,
@@ -432,13 +432,13 @@ export const projects: readonly Project[] = [
     ...placeholderCopy,
     gallery: [
       {
-        src: "/images/web development/Dental Services Website Template.webp",
+        src: "/images/web-development/webdev-02.webp",
         alt: "Dental services website development presentation.",
         width: 736,
         height: 1104,
       },
       {
-        src: "/images/web development/Metal Roofing Website Design – Sleek Industrial Look.webp",
+        src: "/images/web-development/webdev-07.webp",
         alt: "Industrial metal roofing website design presentation.",
         width: 736,
         height: 1104,

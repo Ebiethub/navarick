@@ -7,10 +7,10 @@ const portfolioImageRoot = path.join(process.cwd(), "public", "images");
 const imageExtensions = new Set([".jpg", ".jpeg", ".png", ".webp", ".svg"]);
 
 const excludedFilenameFragments = [
-  "getyourcustomlogodesignednow",
-  "uiuxdesignwebdesignwebsitedesignuxdesignuidesignuserexperience",
-  "shopifydesignecommercewebsitefiverrfreelanceronlinestoredigitalproducts",
-  "outfitfashiondesignhashtagsfashiondesignoutfitinspirationstylegoals",
+  "logo-41",
+  "mobile-app-01",
+  "webdev-01",
+  "webdev-08",
 ];
 
 const noisyFilenameTokens = new Set([
@@ -54,14 +54,14 @@ const noisyFilenameTokens = new Set([
 ]);
 
 const folderCategoryMap: Record<string, PortfolioCategory> = {
-  "Brand Identity": "Brand Identity",
-  "Brand strategy": "Brand Identity",
-  "logo design1": "Logo Design",
-  "mobile app": "UI/UX Design",
-  "product design": "UI/UX Design",
-  "uiux design": "UI/UX Design",
-  "web development": "Development",
-  "website design": "Web Design",
+  "brand-identity": "Brand Identity",
+  "brand-strategy": "Brand Identity",
+  "logo-design": "Logo Design",
+  "mobile-app": "UI/UX Design",
+  "product-design": "UI/UX Design",
+  "uiux-design": "UI/UX Design",
+  "web-development": "Development",
+  "website-design": "Web Design",
 };
 
 const categoryFallbackTitles: Record<PortfolioCategory, string> = {
