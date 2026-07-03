@@ -7,7 +7,11 @@ const portfolioImageRoot = path.join(process.cwd(), "public", "images");
 const imageExtensions = new Set([".jpg", ".jpeg", ".png", ".webp", ".svg"]);
 
 const excludedFilenameFragments = [
-  "logo-41",
+  "brand-identity-06",
+  "brand-identity-09",
+  "brand-identity-11",
+  "brand-identity-13",
+  "brand-identity-17",
   "mobile-app-01",
   "webdev-01",
   "webdev-08",
@@ -89,7 +93,7 @@ function normalizeForMatching(value: string) {
 function shouldExcludeImage(filename: string) {
   const normalizedName = normalizeForMatching(filename);
 
-  return excludedFilenameFragments.some((fragment) => normalizedName.includes(fragment));
+  return excludedFilenameFragments.some((fragment) => normalizedName.includes(normalizeForMatching(fragment)));
 }
 
 function titleFromFilename(filename: string, category: PortfolioCategory, index: number) {
