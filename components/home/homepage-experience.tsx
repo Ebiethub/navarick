@@ -52,7 +52,7 @@ function PortfolioPreview() {
             key={item.src}
           >
             <PortfolioMediaCard
-              fit="cover"
+              fit="contain"
               media={item}
               sizes="(max-width: 640px) 92vw, (max-width: 1024px) 44vw, 30vw"
               variant="logo"
