@@ -6654,6 +6654,16 @@ canvas {
   .case-facts {
     gap: 0;
   }
+
+  .capabilities .capability-row {
+    grid-template-columns: 3rem minmax(0, 1fr);
+    align-items: start;
+    gap: 0.75rem 1rem;
+  }
+
+  .capabilities .capability-row p {
+    grid-column: 2;
+  }
 }
 
 @media (max-width: 40rem) {
@@ -6723,6 +6733,10 @@ canvas {
   .hero-editorial__inner {
     gap: clamp(1rem, 3vh, 1.75rem);
     padding: 5.25rem 1.25rem 1.25rem;
+  }
+
+  .capabilities .capability-row {
+    grid-template-columns: 2.25rem minmax(0, 1fr);
   }
 
   .hero-editorial__heading {
