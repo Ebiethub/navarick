@@ -31,7 +31,6 @@ export function PortfolioMediaCard({
   variant = "cover",
   className,
 }: PortfolioMediaCardProps) {
-  const resolvedFit = variant === "logo" ? "contain" : fit;
   const prefersReducedMotion = useReducedMotion();
   const [canUsePointerDepth, setCanUsePointerDepth] = useState(false);
   const frameRef = useRef<number | null>(null);
@@ -69,10 +68,10 @@ export function PortfolioMediaCard({
   const image = (
     <Image
       alt={alt ?? media.alt}
-      className={`portfolio-media-card__image portfolio-media-card__image--${resolvedFit}`}
+      className={`portfolio-media-card__image portfolio-media-card__image--${fit}`}
       fill
       priority={priority}
-      quality={priority ? 90 : variant === "logo" ? 88 : 78}
+      quality={priority ? 82 : 72}
       sizes={sizes}
       src={media.src}
     />
